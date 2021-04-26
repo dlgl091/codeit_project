@@ -105,5 +105,16 @@ print(s_3, b_3)
 s_4, b_4 = get_score([2, 4, 7], [2, 4, 7])
 print(s_4, b_4)
 
+# 여기서부터 게임 시작!
+ANSWER = generate_numbers()
+tries = 0
+while True:
 
+    s_5, b_5=get_score(take_guess(),ANSWER)
+    print("{}S {}B\n".format(s_5,b_5))
+    tries += 1
+    if s_5==3:
+        break
+        
+print("축하합니다. {}번 만에 숫자 3개의 값과 위치를 모두 맞추셨습니다.".format(tries))
 
