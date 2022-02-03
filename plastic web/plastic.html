@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경 분리수거 예제</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="plastic.css">
+    
+</head>
+<body>
+    <div class="user-test-wrap">
+        <div class="test-border">
+            <div class="test-toggle-area">
+                <div class="user-select-area">
+                    <p class="non-alert-des" style="opacity: 0;">페트병을(를) 선택했습니다.</p>
+                    <div class="select-el-holder">
+                        <ul>
+                            <li data-index="0">
+                                <!-- $el -->
+                                <div class="each-el">
+                                    <div class="el-thumb">
+                                        <img src="https://img.khan.co.kr/spko/storytelling/2021/carbonprint/select-item-1.png" class="noselect" alt="일회용컵">
+                                    </div>
+                                    <p>일회용컵</p>
+                                </div>
+                                <div class="count-control">
+                                    <p class="count-view"><span class="count-value">0</span>개</p>
+                                    <span class="count-btn noselect countUp">+</span>
+                                    <span class="count-btn noselect countDown">-</span>
+                                </div>
+                                <div class="cancel-btn">선택 취소 ×</div>
+                            </li>
+                            <li data-index="1">
+                                <div class="each-el">
+                                    <div class="el-thumb">
+                                        <img src="https://img.khan.co.kr/spko/storytelling/2021/carbonprint/select-item-2.png" class="noselect" alt="비닐봉지">
+                                    </div>
+                                    <p>비닐봉지</p>
+                                </div>
+                                <div class="count-control">
+                                    <p class="count-view"><span class="count-value">0</span>개</p>
+                                    <span class="count-btn noselect countUp">+</span>
+                                    <span class="count-btn noselect countDown">-</span>
+                                </div>
+                                <div class="cancel-btn">선택 취소 ×</div>
+                            </li>
+                            <li data-index="2">
+                                <div class="each-el">
+                                    <div class="el-thumb">
+                                        <img src="https://img.khan.co.kr/spko/storytelling/2021/carbonprint/select-item-3.png" class="noselect" alt="페트병">
+                                    </div>
+                                    <p>페트병</p>
+                                </div>
+                                <div class="count-control">
+                                    <p class="count-view"><span class="count-value">0</span>개</p>
+                                    <span class="count-btn noselect countUp">+</span>
+                                    <span class="count-btn noselect countDown">-</span>
+                                </div>
+                                <div class="cancel-btn">선택 취소 ×</div>
+                            </li>
+                            <li data-index="3">
+                                <div class="each-el">
+                                    <div class="el-thumb">
+                                        <img src="https://img.khan.co.kr/spko/storytelling/2021/carbonprint/select-item-4.png" class="noselect" alt="배달용기">
+                                    </div>
+                                    <p>배달용기</p>
+                                </div>
+                                <div class="count-control">
+                                    <p class="count-view"><span class="count-value">0</span>개</p>
+                                    <span class="count-btn noselect countUp">+</span>
+                                    <span class="count-btn noselect countDown">-</span>
+                                </div>
+                                <div class="cancel-btn">선택 취소 ×</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="button btn-blue" id="GO_RESULT_BTN">
+                    <p>결과보기</p>
+                </div>
+                <div class="button btn-blue" id="TEST_AGAIN_BTN_TOP" style="display: block; margin-top:30px">
+                    <p>테스트 다시하기</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="test-result-body" style="display: block;">
+        <div class="test-result-wrap">
+            <div class="result-body">
+                <h2>테스트 결과</h2>
+                <div class="result-list">
+                    <div class="each-result-row result--1">
+                        <div class="result-head">
+                            <p class="number">1</p>
+                            <p class="text">당신이 사용한 플라스틱 무게</p>
+                        </div>
+                        <div class="result-body">
+                            <div class="result-text">
+                                <p>
+                                    미세플라스틱 <span id="weight"></span>g 절약했고, 이는 취약계층에 <span id="won"></span>원 기부되고, <span id="coolbang"></span>개의 유기견 쿨링방석과
+                                    <span id="coolzzo"></span>개의 쿨조끼를 만들 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <script src="../assets/js/jquery-2.2.4.min.js"></script> -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="../assets/js/swiper.min.js"></script> -->
+    <script src="plastic.js"></script>
+</body>
+</html>
